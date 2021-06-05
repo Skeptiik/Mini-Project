@@ -50,6 +50,11 @@ ul {
   text-align: right;
 }
 
+#bottom_text {
+  text-align: center;
+  line-height: 2em;
+}
+
 #footer1 {
   position: fixed;
   bottom: 50px;
@@ -101,12 +106,26 @@ ul {
   margin: 30px;
 }
 
-#box {
-  position: absolute; 
-  left: 37%;
-  bottom: 15%;
+#box1 {
+  position: absolute;
+	top:0;
+	bottom: 15%;
+	left: 0;
+	right: 0;
+  text-align: center;
+  margin: auto;
+  font-size: 50px;
+  line-height: 100px;
+}
+
+#box2 {
+  position: fixed;
+  margin: 5% auto;
+  left: 0;
+  right: 0;
+  bottom: -45px;
   border-radius: 20px;
-  color:rgb(119, 7, 7);
+  color:rgb(119, 7, 7); width: 50%;
 }
 
 a:link {
