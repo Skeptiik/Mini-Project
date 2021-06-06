@@ -1,11 +1,13 @@
-html,body {
-  overflow-y: scroll; 
-}
 
 body {
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   background-color: rgb(255, 231, 231);
 } 
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
 header {
   position: fixed;
@@ -15,18 +17,22 @@ header {
   height: 100px;
   border-bottom: 10px solid rgb(119, 7, 7);
   background-color: rgb(230, 173, 173);  
+  z-index: 1;
 }
 
-#content {
-  position: static;
+#scroll {
+  overflow-y: scroll;
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 80px;
   color: rgb(56, 56, 56);
+  padding-top: 160px;
   text-align: center;
-  position: sticky;
-  top: 100px;
+  width: 80%;
+  height: 50%;
+  margin: auto;
+  padding-bottom: 410px;
 }
 
 h2 {
@@ -59,9 +65,14 @@ ul {
 
 #bottom_text {
   text-align: center;
-  line-height: 2em;
-  position: relative;
-  top: 500px;
+  padding-top: 210px;
+  font-size: 20px;
+}
+
+#bottom_text2 {
+  text-align: center;
+  padding-top: 1000px;
+  font-size: 20px;
 }
 
 #footer1 {
@@ -94,7 +105,7 @@ ul {
   margin: auto;
   position: relative;
   top: 0px;
-  left: 2px;
+  left: 1px;
   font-weight: bold; 
 }
 
@@ -102,7 +113,7 @@ ul {
   margin: auto;
   position: fixed;
   bottom: 100px;
-  right: 47.99%;
+  right: 48.60%;
   font-size: 20px;
   background-color: rgb(255, 231, 231);
 }
@@ -116,7 +127,7 @@ ul {
 }
 
 #box1 {
-  position: sticky;
+  position: absolute;
 	top: 0;
 	bottom: 0;
 	left: 0;
@@ -125,14 +136,15 @@ ul {
   margin: auto;
   font-size: 50px;
   line-height: 100px;
+  z-index: auto;
 }
 
 #box2 {
   position: fixed;
-  margin: 5% auto;
+  margin: auto;
   left: 0;
   right: 0;
-  bottom: -45px;
+  bottom: 6.5%;
   border-radius: 20px;
   color:rgb(119, 7, 7); width: 50%;
 }
@@ -160,4 +172,3 @@ a::before {
 a:hover::before {
   width: 100%;
 }
-
